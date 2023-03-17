@@ -11,9 +11,10 @@ export default function CardList() {
     ])
 
     useEffect(()=>{
-        axios.get("http://localhost:3000/api/receitas")
+        axios.get("/api/receitas/")
         .then(response => setReceitas(response.data))
     },[])
+
 
     return (
 
@@ -25,7 +26,10 @@ export default function CardList() {
                     imagem={receita.imagem}
                     titulo={receita.titulo}
                     tempoPreparo={receita.tempoPreparo}
-                    porcoes={receita.porcoes} />
+                    porcoes={receita.porcoes} 
+                    iconePorcoes={receita.iconePorcoes}
+                    iconeTime={receita.iconeTime}
+                    />
             })}
 
 
