@@ -17,7 +17,7 @@ export default function Card({ id, titulo, tempoPreparo, porcoes, imagem, iconeT
                     <Image src={iconeTime} className={styles.card_imagens} width="24" height="24" />
                     <Image src={iconePorcoes} alt="pote" width="24" height="24" />
 
-                    <span className={styles.card_info1}> {tempoPreparo}minutos </span>
+                    <span className={styles.card_info1}>{tempoPreparo} minutos </span>
                     <span className={styles.card_info2}>{porcoes} pessoas</span>
                 </div>
             </Link>

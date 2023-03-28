@@ -2,24 +2,33 @@
    margin: 0 auto;
    max-width: 1200px;
 }
+.imagemCapa{
+   width: 100%;
+   margin-top: 40px;
+   position: relative;
+}
+
+.background_imagem{
+   background-color: rgba(235, 87, 87, 0.6);
+   position: absolute;
+   width: 100%;
+   max-width: 1200px;
+   height: 158px;
+   top: 360px;
+}
 
 .title {
    position: absolute;
    text-align: center;
-   background: rgba(235, 87, 87, 0.6);
-   top: 290px;
+   top: 395px;
    width: 100%;
    max-width: 1200px;
-   padding: 18px 0px ;
    color: #F2F2F2;
    font-weight: 600;
    font-family: 'Quicksand';
-   
+   font-size: 56px;
 }
 
-.imagemCapa{
-   width: 100%;
-}
 
 .icone{
    display: flex;
@@ -27,4 +36,11 @@
    column-gap: 8px;
    row-gap: 8px;
    height: 40px;
+}
+
+.link{
+   color: #000000;
+   text-decoration: none;
+   font-size: 16px;
+   
 }

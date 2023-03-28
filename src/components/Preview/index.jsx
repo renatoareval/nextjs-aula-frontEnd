@@ -2,7 +2,7 @@ import axios from "axios"
 import { useEffect, useState } from "react"
 import { useRouter } from "next/router";
 import Image from "next/image";
-
+import Link from "next/link";
 import styles from "./Preview.module.css";
 
 
@@ -19,21 +19,28 @@ export default function Preview() {
     }, [router])
 
 
-    console.log(receitas.ingredientes)
+
 
     return (
         <>
             <div className={styles.container}>
-
-                
-                <Image src={receitas.capa}
-                    className={styles.imagemCapa}
-                    alt={receitas.titulo}
-                    width="300"
-                    height="222"
-                    sizes="100"
+                <Link className={styles.link} href="/">Voltar Home</Link>
+                <div>
+                    <Image src={receitas.capa}
+                        className={styles.imagemCapa}
+                        alt={receitas.titulo}
+                        width="300"
+                        height="329"
+                        sizes="100"
                     />
+                    <div className={styles.background_imagem}>
+
+                    </div>
+                </div>
+
                 <h2 className={styles.title}>{receitas.titulo}</h2>
+
+
                 <div className={styles.descricao}>
                     <div className={styles.descricao_icone}>
                         <div className={styles.icone}>
@@ -53,10 +60,13 @@ export default function Preview() {
                 </div>
 
                 <h2>Ingredientes</h2>
-                <ul>
-                    <p>{receitas.ingredientes}</p>
-                </ul>
 
+                <ul style={{ background: 'red', height: '100px' }}>
+                 <li>
+                    {receitas.ingredientes}
+                 </li>
+
+                </ul>
                 <h2>Modo de preparo</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque ut tortor eget facilisis. Proin et enim a turpis feugiat placerat. Cras varius rutrum tortor, et auctor magna sodales sit amet. Aliquam erat volutpat. Aenean luctus eros ex. Duis accumsan justo at eros tempor iaculis. Nunc accumsan ultrices odio nec egestas. Aenean non nisi id ligula sollicitudin viverra a sit amet justo. Fusce rhoncus ligula nec libero mollis vehicula. In augue nunc, finibus et magna euismod, porta maximus sapien. Mauris aliquet vehicula porta.
 
