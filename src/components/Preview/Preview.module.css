@@ -1,18 +1,30 @@
-.imagemCapa{
-   width: 100vw;
-
-   position: relative;
+.container{
+   margin: 0 auto;
+   max-width: 1200px;
 }
 
-.title{
-   text-align: center;
+.title {
    position: absolute;
+   text-align: center;
    background: rgba(235, 87, 87, 0.6);
-   top: 270px;
+   top: 290px;
    width: 100%;
+   max-width: 1200px;
    padding: 18px 0px ;
    color: #F2F2F2;
    font-weight: 600;
    font-family: 'Quicksand';
+   
 }
 
+.imagemCapa{
+   width: 100%;
+}
+
+.icone{
+   display: flex;
+   align-items: center;
+   column-gap: 8px;
+   row-gap: 8px;
+   height: 40px;
+}
