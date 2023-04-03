@@ -11,15 +11,14 @@ export default function Preview() {
     const router = useRouter();
     const { id } = router.query;
 
-    const [receitas, setReceitas] = useState({})
+    const [receitas, setReceitas] = useState([])
 
     useEffect(() => {
         axios.get(`/api/receitas/${id}`)
             .then(response => setReceitas(response.data))
     }, [router])
 
-
-
+    {receitas.for}
 
     return (
         <>
@@ -61,10 +60,19 @@ export default function Preview() {
 
                 <h2>Ingredientes</h2>
 
-                <ul style={{ background: 'red', height: '100px' }}>
-                 <li>
-                    {receitas.ingredientes}
-                 </li>
+                <ul>
+                    <li style={{margin:'10px 20px'}}>
+                        Ovo
+                    </li>
+                    <li style={{margin:'10px 20px'}}>
+                        Pepino
+                    </li>
+                    <li style={{margin:'10px 20px'}}>
+                        Arroz
+                    </li>
+                    <li style={{margin:'10px 20px'}}>
+                        Sal
+                    </li>
 
                 </ul>
                 <h2>Modo de preparo</h2>
