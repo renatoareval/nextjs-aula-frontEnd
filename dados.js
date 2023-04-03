@@ -8,7 +8,7 @@ export const receitas = [
         imagem: "/imagens/foto-1.png",
         iconePorcoes: "/imagens/porcoes.svg",
         iconeTime: "/imagens/time.svg",
-        ingredientes: ["Ovo", "Arroz", "Pepipo", "Sal"]
+        
     },
 
 
@@ -21,7 +21,6 @@ export const receitas = [
         imagem: "/imagens/foto-2.png",
         iconePorcoes: "/imagens/porcoes.svg",
         iconeTime: "/imagens/time.svg",
-        ingredientes: ["Ovo", "Arroz", "Pepino", "Sal"]
     },
     {
         id: 3,
@@ -32,7 +31,6 @@ export const receitas = [
         imagem: "/imagens/foto-3.png",
         iconePorcoes: "/imagens/porcoes.svg",
         iconeTime: "/imagens/time.svg",
-        ingredientes: ["Ovo", "Arroz", "Pepino", "Sal"]
     },
     {
         id: 4,
@@ -43,7 +41,6 @@ export const receitas = [
         imagem: "/imagens/foto-4.png",
         iconePorcoes: "/imagens/porcoes.svg",
         iconeTime: "/imagens/time.svg",
-        ingredientes: ["Ovo", "Arroz", "Pepino", "Sal"]
     },
     {
         id: 5,
@@ -54,7 +51,6 @@ export const receitas = [
         imagem: "/imagens/foto-5.png",
         iconePorcoes: "/imagens/porcoes.svg",
         iconeTime: "/imagens/time.svg",
-        ingredientes: ["Ovo", "Arroz", "Pepino", "Sal"]
     },
     {
         id: 6,
@@ -65,7 +61,6 @@ export const receitas = [
         imagem: "/imagens/foto-6.png",
         iconePorcoes: "/imagens/porcoes.svg",
         iconeTime: "/imagens/time.svg",
-        ingredientes: ["Ovo", "Arroz", "Pepino", "Sal"]
     },
     {
         id: 7,
@@ -76,7 +71,6 @@ export const receitas = [
         imagem: "/imagens/foto-7.png",
         iconePorcoes: "/imagens/porcoes.svg",
         iconeTime: "/imagens/time.svg",
-        ingredientes: ["Ovo", "Arroz", "Pepino", "Sal"]
     },
     {
         id: 8,
@@ -87,7 +81,6 @@ export const receitas = [
         imagem: "/imagens/foto-8.png",
         iconePorcoes: "/imagens/porcoes.svg",
         iconeTime: "/imagens/time.svg",
-        ingredientes: ["Ovo", "Arroz", "Pepino", "Sal"]
     },
     {
         id: 9,
@@ -98,6 +91,5 @@ export const receitas = [
         imagem: "/imagens/foto-9.png",
         iconePorcoes: "/imagens/porcoes.svg",
         iconeTime: "/imagens/time.svg",
-        ingredientes: ["Ovo", "Arroz", "Pepino", "Sal"]
     }
 ]
